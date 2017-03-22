@@ -1,0 +1,11 @@
+<Z-EVES-GUI-State version="1" index="6"><textItem location="gui::1"><zed-box location="gui::1">[PESSOAS,LIVROS]</zed-box></textItem
+><textItem location="gui::2"><axiomatic-box location="gui::2"><decl-part/>cusro:&Nopf;&lrarr;LIVROS
+lendo:PESSOAS&lrarr;LIVROS</axiomatic-box></textItem
+><textItem location="gui::3"><generic-box location="gui::3"> gostar <decl-part/>gosta:PESSOAS&lrarr;PESSOAS<ax-part/>&forall;p1,p2:PESSOAS;l1,l2:LIVROS&bullet;(p1,l1)&isin;lendo&wedge;(p2,l1)&isin;lendo&rArr;(p1,p2)&isin;gosta</generic-box></textItem
+><textItem location="gui::4"><schema-box location="gui::4">gula  <decl-part/>gulosos:&Popf;PESSOAS
+lendop1:&Popf;lendo<ax-part/>&forall;p1:PESSOAS&bullet;lendop1={p1}&vltri;lendo&wedge;#lendop1&geq;3&rArr;(p1)&isin;gulosos</schema-box></textItem
+><textItem location="gui::5"><schema-box location="gui::5"> preco <decl-part/>precounico:LIVROS&Rarrb;&Nopf;</schema-box></textItem
+><textItem location="gui::6"><schema-box location="gui::6">amam <decl-part/>  &Xi;gula
+&Xi;gostar
+lendop1,lendop2<ax-part/>  &forall;p1,p2:PESSOAS&bullet;(p1&isin;gulosos&wedge;p2&isin;gulosos)&wedge;(lendop1={p1}&vltri;lendo&wedge;lendop2={p2}&vltri;lendo)&wedge;#(lendop1&cap;lendop2)&gt;#lendop2/2 &wedge;#(lendop1&cap;lendop2)&gt;#lindop1/2&rArr;(p1,p2)&isin;ama</schema-box></textItem
+></Z-EVES-GUI-State>
