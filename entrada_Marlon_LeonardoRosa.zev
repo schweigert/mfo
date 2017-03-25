@@ -1,0 +1,33 @@
+<Z-EVES-GUI-State version="1" index="12"><textItem history="2" location="gui::1"><zed-box location="gui::1">[PESSOAS, LIVROS]</zed-box></textItem
+><textItem history="3" location="gui::2"><axiomatic-box location="gui::2"><decl-part/>lendo: PESSOAS &lrarr; LIVROS
+custo: &Nopf; &lrarr; LIVROS
+</axiomatic-box></textItem
+><textItem history="4" location="gui::3"><schema-box location="gui::3">Gosta<decl-part/> gostam: PESSOAS &lrarr; PESSOAS<ax-part/>
+&forall; p1, p2: PESSOAS; l1: LIVROS
+    &bullet; p1 &rtarr; l1 &isin; lendo &wedge; p2 &rtarr; l1 &isin; lendo &wedge; p1 &neq; p2 &rArr; p1 &rtarr; p2 &isin; gostam 
+&forall; p1, p2: PESSOAS; l1: LIVROS
+    &bullet; lendo p1 = l1 &wedge; lendo p2 = l1 &wedge; p1 &neq; p2 &rArr; p1 &rtarr; p2 &isin; gostam</schema-box></textItem
+><textItem history="5" location="gui::4"><schema-box location="gui::4">gula<decl-part/>  gulosos: &Popf; PESSOAS
+qtdelendo: &Nopf;
+p1le: LIVROS<ax-part/>  &forall;p1: PESSOAS &bullet; p1le = lendo p1  &rArr; p1 &isin; gulosos</schema-box></textItem
+><textItem history="6" location="gui::7"><schema-box location="gui::7">outraformagulosos<decl-part/> gulosos: &Popf; PESSOAS
+p1lendo: PESSOAS &lrarr; LIVROS<ax-part/> &forall; p1: PESSOAS; p1le: &Popf; PESSOAS
+    &bullet; p1lendo = {p1} &vltri; lendo &wedge; p1le = <word style="roman"/>dom<word/> p1lendo &wedge; # p1lendo &geq; 3
+      &rArr; p1 &isin; gulosos</schema-box></textItem
+><textItem history="7" location="gui::8"><schema-box location="gui::8">precounico  <decl-part/>umpreco: LIVROS &Rarrb; &Nopf;</schema-box></textItem
+><textItem location="gui::9"><schema-box location="gui::9">amam <decl-part/> &Xi;gula
+p1, p2: gulosos
+amorosos: &Popf;PESSOAS<ax-part/>np1 = #&lvang; &lvang;{p1} &vltri; lendo&rvang;&cap;&lvang;{p2}&vltri; lendo&rvang; &rvang;  &wedge; np2 = #&lvang;{p2}&vltri;lendo&rvang; &wedge; np1 &gt; np2/2
+&rArr; p1 &isin; amorosos </schema-box></textItem
+><textItem location="gui::11"><schema-box location="gui::11">carlos <decl-part/> lendo: PESSOAS&lrarr;LIVROS
+livrosDoCarlos: &Popf;LIVROS<ax-part/>  &forall;p : PESSOAS
+&bullet; plendo = {p} &vltri; lendo &wedge; p = "Carlos"
+&rArr; LivrosDoCarlos = lendo(p)</schema-box></textItem
+><textItem location="gui::10"><schema-box location="gui::10"> p2p <decl-part/>lendop2p: &Popf;LIVROS<ax-part/> &forall; l: LIVROS; </schema-box></textItem
+><script name="outraformagulosos$domainCheck"></script
+><script name="gula$domainCheck"><scriptItem><ztext>cases</ztext></scriptItem
+><scriptItem><ztext>prenex</ztext></scriptItem
+><scriptItem><ztext>with normalization reduce</ztext></scriptItem
+></script
+><script name="Gosta$domainCheck"></script
+></Z-EVES-GUI-State>
