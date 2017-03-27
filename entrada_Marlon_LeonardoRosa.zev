@@ -1,4 +1,4 @@
-<Z-EVES-GUI-State version="1" index="12"><textItem history="2" location="gui::1"><zed-box location="gui::1">[PESSOAS, LIVROS]</zed-box></textItem
+<Z-EVES-GUI-State version="1" index="16"><textItem history="2" location="gui::1"><zed-box location="gui::1">[PESSOAS, LIVROS]</zed-box></textItem
 ><textItem history="3" location="gui::2"><axiomatic-box location="gui::2"><decl-part/>lendo: PESSOAS &lrarr; LIVROS
 custo: &Nopf; &lrarr; LIVROS
 </axiomatic-box></textItem
@@ -19,11 +19,27 @@ p1lendo: PESSOAS &lrarr; LIVROS<ax-part/> &forall; p1: PESSOAS; p1le: &Popf; PES
 p1, p2: gulosos
 amorosos: &Popf;PESSOAS<ax-part/>np1 = #&lvang; &lvang;{p1} &vltri; lendo&rvang;&cap;&lvang;{p2}&vltri; lendo&rvang; &rvang;  &wedge; np2 = #&lvang;{p2}&vltri;lendo&rvang; &wedge; np1 &gt; np2/2
 &rArr; p1 &isin; amorosos </schema-box></textItem
-><textItem location="gui::11"><schema-box location="gui::11">carlos <decl-part/> lendo: PESSOAS&lrarr;LIVROS
-livrosDoCarlos: &Popf;LIVROS<ax-part/>  &forall;p : PESSOAS
-&bullet; plendo = {p} &vltri; lendo &wedge; p = "Carlos"
-&rArr; LivrosDoCarlos = lendo(p)</schema-box></textItem
-><textItem location="gui::10"><schema-box location="gui::10"> p2p <decl-part/>lendop2p: &Popf;LIVROS<ax-part/> &forall; l: LIVROS; </schema-box></textItem
+><textItem location="gui::11"><schema-box location="gui::11">carlos <decl-part/>      livrosDeCarlos : &Popf;LIVROS<ax-part/>      &forall;livro: LIVROS;
+&bullet; livro &isin; "carlos" &vltri; lendo
+&rArr; livro &isin; livrosDeCarlos</schema-box></textItem
+><textItem location="gui::10"><schema-box location="gui::10"> p2p <decl-part/>   lendop2p: &Popf;PESSOAS<ax-part/>    &forall; p: PESSOA;
+&bullet; p &isin; lendo &vrtri; "p2p"
+&rArr; p &isin; lendop2p</schema-box></textItem
+><textItem location="gui::13"><schema-box location="gui::13"> notRec and NotOpp <decl-part/>     nLendo!: &Popf;PESSOAS
+estaoLendo: &Popf;PESSOAS<ax-part/>      &forall; p: PESSOA;
+&bullet; p &isin; lendo &vrtri; "Redes" &vee; p &isin; lendo &vrtri; "OPP"
+    &rArr; p &isin; estaoLendo
+&bullet; nLendo! = PESSOAS - estaoLendo</schema-box></textItem
+><textItem location="gui::15"><schema-box location="gui::15"> notJohn and NotMary <decl-part/>       nLivros!: &Popf;LIVROS
+estaoLendo: &Popf;LIVROS<ax-part/> &forall; l: LIVROS;
+   &bullet; l &isin; lendo &vrtri; Joao &vee; l &isin; lendo &vrtri; Maria
+&rArr; l &isin; estaoLendo
+&bullet; nLivros = LIVROS - estaoLendo</schema-box></textItem
+><textItem location="gui::16"><schema-box location="gui::16"> Custo entre <decl-part/>       estaoLendo!: &Popf;PESSOAS<ax-part/>        &forall; p: PESSOA &isin; literatura : &Popf;LIVROS; c : &Nopf;;
+&bullet; literatura = lendo p;
+&bullet; c = custo &vltri; literatura
+        &forall; j : &Nopf; &isin; c &bullet; j &lt; 35 &wedge; j &gt; 25
+  &rArr; p &isin; estaoLendo!</schema-box></textItem
 ><script name="outraformagulosos$domainCheck"></script
 ><script name="gula$domainCheck"><scriptItem><ztext>cases</ztext></scriptItem
 ><scriptItem><ztext>prenex</ztext></scriptItem
