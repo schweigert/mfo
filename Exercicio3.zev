@@ -1,0 +1,3 @@
+<Z-EVES-GUI-State version="1" index="2"><textItem history="2" location="gui::1"><zed-box location="gui::1">[DISCIPLINAS, ALUNOS, NOTAS]</zed-box></textItem
+><textItem location="gui::2"><schema-box location="gui::2">Definicao<decl-part/> notas: DISCIPLINAS &lrarr; ALUNOS &lrarr; NOTAS<ax-part/> </schema-box></textItem
+></Z-EVES-GUI-State>
