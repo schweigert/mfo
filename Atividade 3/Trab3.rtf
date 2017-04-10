@@ -1,0 +1,64 @@
+{\rtf\ansi{\fonttbl
+{\f0\froman Times New Roman;}
+{\f1\ftech Symbol;}
+{\f2\fnil \fprq2 \fcharset2 Zedfont;}}
+\plain \keep 
+\par {\f0 [}{\f0 \i DISCIPLINAS}{\f0 ,}{\f0 \i  ALUNOS}{\f0 ]
+}\line
+\par {\f0 \i NOTAS}{\f2  ==}{\f0 \i  }{\f0 1}{\f0 \i  .. }{\f0 10
+}\line
+\par {\f2 \'c8_}{\f0 \i SistemaAcademico }{\f2 ______________________________\line
+\'ae}{\f0 \i   bd: DISCIPLINAS }{\f2 j}{\f0 \i  ALUNOS }{\f2 j}{\f0 \i  NOTAS\line
+}{\f2 \'c7_______________\line
+\'ae}{\f0 \i   }{\f2 A}{\f0 \i  d: DISCIPLINAS; a: ALUNOS;\line
+}{\f2 \'ae}{\f0 \i \'09}{\f2 \'a5}{\f0 \i  # bd(d,a) }{\f2 \'f8}{\f0 \i  1\line
+}{\f2 \'d0_______________________________________\line
+
+}
+\par {\f2 \'c8_}{\f0 \i NotasDisciplina}{\f2 _______________________________\line
+\'ae}{\f0 \i   }{\f1 X}{\f0 \i  SistemaAcademico\line
+}{\f2 \'ae}{\f0 \i d?: }{\f2 P}{\f0 \i DISCIPLINAS\line
+}{\f2 \'ae}{\f0 \i matriculas!: }{\f2 P}{\f0 \i ALUNOS }{\f2 j}{\f0 \i  }{\f2 P}{\f0 \i NOTAS\line
+}{\f2 \'c7_______________\line
+\'ae}{\f0 \i   matriculas! = db(d?)\line
+}{\f2 \'d0_______________________________________\line
+
+}
+\par {\f2 \'c8_}{\f0 \i Matriculados }{\f2 ________________________________\line
+\'ae}{\f0 \i   }{\f1 X}{\f0 \i SistemaAcademico \line
+}{\f2 \'ae}{\f0 \i d? : }{\f2 P}{\f0 \i DISCIPLINAS\line
+}{\f2 \'ae}{\f0 \i alunos!: }{\f2 P}{\f0 \i ALUNOS\line
+}{\f2 \'ae}{\f0 \i auxTurma: }{\f2 P}{\f0 \i ALUNOS }{\f2 j}{\f0 \i  NOTAS\line
+}{\f2 \'c7_______________\line
+\'ae}{\f0 \i  auxTurma = bd(d?)\line
+}{\f2 \'ae}{\f0 \i alunos! = }{\f0 dom}{\f0 \i  auxTurma\line
+}{\f2 \'d0_______________________________________\line
+
+}
+\par {\f2 \'c8_}{\f0 \i ComprovanteMatricula }{\f2 ____________________________\line
+\'ae}{\f0 \i   }{\f1 X}{\f0 \i SistemaAcademico\line
+}{\f2 \'ae}{\f0 \i aluno?: ALUNOS\line
+}{\f2 \'ae}{\f0 \i disciplinas!, disciplinas': }{\f2 P}{\f0 \i DISCIPLINAS\line
+}{\f2 \'c7_______________\line
+\'ae}{\f0 \i   }{\f2 A}{\f0 \i  d: DISCIPLINAS }{\f2 \'a5}{\f0 \i  aluno? }{\f2 e}{\f0 \i  }{\f0 dom}{\f0 \i  db(d) }{\f2 \'de}{\f0 \i  disciplinas' = \{d\} }{\f2 U}{\f0 \i  disciplinas!\line
+}{\f2 \'d0_______________________________________\line
+
+}
+\par {\f2 \'c8_}{\f0 \i Hist\'f3rico}{\f2 __________________________________\line
+\'ae}{\f0 \i  SistemaAcademico\line
+}{\f2 \'ae}{\f0 \i historico! : }{\f2 P}{\f0 \i DISCIPLINAS }{\f2 j}{\f0 \i  NOTAS\line
+}{\f2 \'ae}{\f0 \i aluno? : }{\f2 P}{\f0 \i ALUNOS\line
+}{\f2 \'c7_______________\line
+\'ae}{\f0 \i  }{\f2 A}{\f0 \i  d: DISCIPLINAS }{\f2 \'a5}{\f0 \i  aluno? }{\f2 e}{\f0 \i  }{\f0 dom}{\f0 \i (db d) }{\f2 \'de}{\f0 \i  d }{\f2 \'b8}{\f0 \i  db(d, aluno?) }{\f2 e}{\f0 \i  historico!\line
+}{\f2 \'d0_______________________________________\line
+
+}
+\par {\f2 \'c8_}{\f0 \i MaiorNota}{\f2 __________________________________\line
+\'ae}{\f0 \i     SistemaAcademico\line
+}{\f2 \'ae}{\f0 \i disciplina? : }{\f2 P}{\f0 \i DISCIPLINAS\line
+}{\f2 \'ae}{\f0 \i maioresNotas! : }{\f2 P}{\f0 \i ALUNOS\line
+}{\f2 \'c7_______________\line
+\'ae}{\f0 \i    }{\f2 A}{\f0 \i  a1,a2: ALUNOS }{\f2 \'a5}{\f0 \i  a1 }{\f2 \'eb}{\f0 \i  a2 }{\f2 \'a6}{\f0 \i  }{\f0 \b if}{\f0 \i  db(disciplina?,a1) }{\f2 >}{\f0 \i  db(disciplina?,a2) }{\f0 \b then}{\f0 \i  a1 }{\f2 e}{\f0 \i  maioresNotas! }{\f0 \b else}{\f0 \i  a2 }{\f2 e}{\f0 \i  maioresNotas! \line
+}{\f2 \'d0_______________________________________\line
+
+}}

@@ -1,0 +1,7 @@
+
+"2.3" ?1=(?2=(?3=(NAME |toolkit| NIL) 3264954470))
+?4=(|)N-BANCO| |)N-N2| |)N-N1| |)N-TURMAS| |)N-MATRICULAS| |)N-X$1| |)N-^B$1| |)N-^I| |)N-V| |)N-U$1| |)N-T$1| |)N-U$0| |)N-T$0| |)N-J| |)N-^F| |)N-^E| |)N-S$2| |)N-S$1| |)N-S$0| |)N-U| |)N-T| |)N-M$0| |)N-M| |)N-K| |)N-N$0| |)N-^R$1| |)N-^RESULT| |)N-^PARAMETER| |)N-STEP| |)N-BASE| |)N-N| |)N-D| |)N-C| |)N-I| |)F-6| |)F-7| |)N-R^036^T| |)N-^S$0| |)N-P$0| |)N-^D| |)N-^R-D| |)N-^Q-D| |)N-G| |)N-^W| |)N-^P| |)N-^Q$0| |)F-5| |)N-^R$0| |)N-^Q| |)N-Y$0| |)N-^U| |)N-^V| |)N-^B$0| |)N-^A$0| |)N-^C| |)N-^B| |)N-^A| |)N-P| |)N-^Z| |)N-E| |)N-^T| |)N-X$0| |)N-^R| |)N-S-D| |)N-S| |)N-B| |)N-A| |)N-^S| |)N-Z-D| |)N-Z| |)N-^036F2| |)N-Y-D| |)N-X-D| |)N-ELEMENT| |)N-X^036-D| |)N-F| |)N-Y2| |)N-Y1| |)N-R| |)N-X^036| |)F-1| |)F-2| |)F-3| |)F-4| |)N-^Y| |)N-^X| |)N-^036F1| |)N-^036F0| |)N-Y| |)N-X| |)M| |)F| |)ARG| |)FN|)?5=(GIVEN-SETS 1 NIL ?6=(?7=(NAME 1 NIL DISCIPLINAS NIL) ?8=(NAME 1 NIL ALUNOS NIL)))
+?9=(DEFINITION 1 NIL ?10=(NAME 1 NIL NOTAS NIL) NIL ?11=(APPLICATION 1 NIL ?12=(REF 1 NIL NIL |&upto| NIL NIL NIL) ?13=(TUPLE 1 NIL ?14=(?15=(CONSTANT 1 NIL 1) ?16=(CONSTANT 1 NIL 10)))))
+:END
+:END
+NIL

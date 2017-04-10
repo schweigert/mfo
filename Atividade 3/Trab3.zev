@@ -1,4 +1,5 @@
-<Z-EVES-GUI-State version="1" index="7"><textItem history="2" location="gui::1"><zed-box location="gui::1">[DISCIPLINAS, ALUNOS, NOTAS]</zed-box></textItem
+<Z-EVES-GUI-State version="1" index="8"><textItem history="2" location="gui::1"><zed-box location="gui::1">[DISCIPLINAS, ALUNOS]</zed-box></textItem
+><textItem history="3" location="gui::8"><zed-box location="gui::8">NOTAS == 1..10</zed-box></textItem
 ><textItem location="gui::2"><schema-box location="gui::2">SistemaAcademico<decl-part/>  bd: DISCIPLINAS &lrarr; ALUNOS &lrarr; NOTAS<ax-part/>  &forall; d: DISCIPLINAS; a: ALUNOS;
 	&bullet; # bd(d,a) &leq; 1</schema-box></textItem
 ><textItem location="gui::3"><schema-box location="gui::3">NotasDisciplina<decl-part/>  &Xi; SistemaAcademico
@@ -9,13 +10,13 @@ d? : &Popf;DISCIPLINAS
 alunos!: &Popf;ALUNOS
 auxTurma: &Popf;ALUNOS &lrarr; NOTAS<ax-part/> auxTurma = bd(d?)
 alunos! = <word style="roman"/>dom<word/> auxTurma</schema-box></textItem
-><textItem location="gui::5"><schema-box location="gui::5">ComprovanteMatricula<decl-part/> &Xi;SistemaAcademico
-aluno?: &Popf;ALUNOS
-disciplinas!: &Popf;DISCIPLINAS<ax-part/> &forall; d: DISCIPLINAS &bullet; aluno? &isin; <word style="roman"/>dom<word/> db(d) &rArr; d &isin; disciplinas!</schema-box></textItem
+><textItem location="gui::5"><schema-box location="gui::5">ComprovanteMatricula<decl-part/>  &Xi;SistemaAcademico
+aluno?: ALUNOS
+disciplinas!, disciplinas': &Popf;DISCIPLINAS<ax-part/>  &forall; d: DISCIPLINAS &bullet; aluno? &isin; <word style="roman"/>dom<word/> db(d) &rArr; disciplinas' = {d} &bigcup; disciplinas!</schema-box></textItem
 ><textItem location="gui::6"><schema-box location="gui::6">Histórico<decl-part/> SistemaAcademico
 historico! : &Popf;DISCIPLINAS &lrarr; NOTAS
 aluno? : &Popf;ALUNOS<ax-part/> &forall; d: DISCIPLINAS &bullet; aluno? &isin; <word style="roman"/>dom<word/>(db d) &rArr; d &rtarr; db(d, aluno?) &isin; historico!</schema-box></textItem
-><textItem location="gui::7"><schema-box location="gui::7">MaiorNota<decl-part/>   SistemaAcademico
+><textItem location="gui::7"><schema-box location="gui::7">MaiorNota<decl-part/>    SistemaAcademico
 disciplina? : &Popf;DISCIPLINAS
-maioresNotas! : &Popf;ALUNOS<ax-part/>  &forall; a1,a2: ALUNOS &bullet; a1 &neq; a2 &wedge; db(disciplina?,a1) &gt; db(disciplina?,a2) &rArr; a1 &isin; maioresNotas!</schema-box></textItem
+maioresNotas! : &Popf;ALUNOS<ax-part/>   &forall; a1,a2: ALUNOS &bullet; a1 &neq; a2 &wedge; <word style="bold"/>if<word/> db(disciplina?,a1) &gt; db(disciplina?,a2) <word style="bold"/>then<word/> a1 &isin; maioresNotas! <word style="bold"/>else<word/> a2 &isin; maioresNotas! </schema-box></textItem
 ></Z-EVES-GUI-State>
