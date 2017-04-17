@@ -1,0 +1,13 @@
+<Z-EVES-GUI-State version="1" index="5"><textItem history="2" location="gui::1"><zed-box location="gui::1">[DISCIPLINA, ALUNO]</zed-box></textItem
+><textItem history="3" location="gui::2"><zed-box location="gui::2">NOTA == { n: &Nopf; | 0 &leq; n &leq; 10 }</zed-box></textItem
+><textItem history="4" location="gui::3"><zed-box location="gui::3">alunomatriculado == DISCIPLINA &lrarr; ALUNO &rarr; NOTA</zed-box></textItem
+><textItem history="5" location="gui::4"><schema-box location="gui::4">HISTORICO<decl-part/> discalunonota: ALUNO&lrarr;DISCIPLINA&rarr;NOTA
+notasnadisc!: DISCIPLINA&rarr;NOTA<ax-part/> &forall;al?: ALUNO &bullet; notasnadisc! = discalunonota al?</schema-box></textItem
+><textItem location="gui::5"><schema-box location="gui::5">MAIORNOTA<decl-part/>  disc?: DISCIPLINA
+alunosnadisccomnota: ALUNO&rarr;NOTA
+maior, n1, n2: NOTA
+alunoscommaiornota!: &Popf; ALUNO<ax-part/>  alunosnadisccomnota = alunomatriculado disc?
+&forall; al1, al2: ALUNO &bullet; al1&neq;al2 &wedge; n1&neq;n2 &wedge; (al1,n1) &isin; alunosnadisccomnota &wedge; (al2,n2) &isin; alunosnadisccomnota
+<word style="bold"/>if<word/> n1 &gt; n2 <word style="bold"/>then<word/> maior = n1 <word style="bold"/>else<word/> maior n2 &rArr; alunoscommaiornota! = <word style="roman"/>dom<word/> (alunosnadisccomnota &vltri; {maior})</schema-box></textItem
+><script name="HISTORICO$domainCheck"></script
+></Z-EVES-GUI-State>
