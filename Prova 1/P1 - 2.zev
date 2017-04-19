@@ -1,0 +1,5 @@
+<Z-EVES-GUI-State version="1" index="3"><textItem history="2" location="gui::1"><zed-box location="gui::1">[PAI,FILHO]</zed-box></textItem
+><textItem history="3" location="gui::3"><schema-box location="gui::3">Atividade2<decl-part/> irmaos, irmaos': FILHO &lrarr; FILHO
+parental: FILHO &lrarr; PAI<ax-part/> &forall; p1, p2: PAI; f1, f2: FILHO &bullet; f1 &neq; f2 &wedge; p1 = p2 &wedge; p1 = parental f1 &wedge; p2 = parental f2 &rArr; irmaos' = irmaos &cup; { (f1, f2) }</schema-box></textItem
+><script name="Atividade2$domainCheck"></script
+></Z-EVES-GUI-State>

@@ -1,0 +1,30 @@
+<Z-EVES-GUI-State version="1" index="25"><textItem history="2" location="gui::4"><zed-box location="gui::4">[AEROPORTO,ASSENTO, AERONAVE, CIDADE, CLASSE, DATA, HORARIO, PASSAGEIRO]</zed-box></textItem
+><textItem history="3" location="gui::8"><zed-box location="gui::8">TRECHO == CIDADE &rarr; CIDADE</zed-box></textItem
+><textItem history="4" location="gui::15"><zed-box location="gui::15">ESCALA == DATA &rarr; TRECHO</zed-box></textItem
+><textItem history="5" location="gui::7"><zed-box location="gui::7">VOO == &Zopf; &rarr; TRECHO</zed-box></textItem
+><textItem history="6" location="gui::20"><zed-box location="gui::20">VAGAS == VOO &rarr; &Zopf;</zed-box></textItem
+><textItem history="7" location="gui::22"><zed-box location="gui::22">ASSENTOS == VOO &rarr; ASSENTO</zed-box></textItem
+><textItem history="8" location="gui::17"><zed-box location="gui::17">ITINERARIO == HORARIO &rarr; HORARIO</zed-box></textItem
+><textItem history="9" location="gui::18"><zed-box location="gui::18">PREVISAO == VOO &rarr; ITINERARIO</zed-box></textItem
+><textItem history="10" location="gui::9"><zed-box location="gui::9">RESERVA == PASSAGEIRO &lrarr; VOO &rarr; ASSENTO &rarr;CLASSE</zed-box></textItem
+><textItem history="11" location="gui::25"><zed-box location="gui::25">VALIDADE == RESERVA &rarr; DATA</zed-box></textItem
+><textItem history="12" location="gui::12"><zed-box location="gui::12">ESCALAAERONAVE == VOO &rarr; AERONAVE</zed-box></textItem
+><textItem history="13" location="gui::13"><schema-box location="gui::13">ViagemCidadeCidade<decl-part/>   rota?: TRECHO
+trechos!: TRECHO<ax-part/>   &forall; t: TRECHO &bullet; rota? = t &rArr; trechos! = t</schema-box></textItem
+><textItem history="14" location="gui::16"><schema-box location="gui::16">ViagemCidadeCidadeData<decl-part/> &Delta; ViagemCidadeCidade
+dia? : DATA
+escala : ESCALA<ax-part/> trechos! = escala dia?</schema-box></textItem
+><textItem history="15" location="gui::19"><schema-box location="gui::19">PrevisaoDoHorario<decl-part/> voo? : VOO
+horas! : ITINERARIO
+voos : PREVISAO<ax-part/> horas! = voos voo?</schema-box></textItem
+><textItem history="16" location="gui::21"><schema-box location="gui::21">DisponibilidadeEmVoo<decl-part/>  voo? : VOO
+quantidade! : &Zopf;
+vagas : VAGAS<ax-part/>  quantidade! = vagas voo?</schema-box></textItem
+><textItem history="17" location="gui::23"><schema-box location="gui::23">AssentosEmVoo<decl-part/> assento! : ASSENTO
+voo? : VOO
+assentos : ASSENTOS<ax-part/> assento! = assentos voo?</schema-box></textItem
+><script name="ViagemCidadeCidadeData$domainCheck"></script
+><script name="DisponibilidadeEmVoo$domainCheck"></script
+><script name="AssentosEmVoo$domainCheck"></script
+><script name="PrevisaoDoHorario$domainCheck"></script
+></Z-EVES-GUI-State>
