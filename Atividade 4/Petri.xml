@@ -1,0 +1,824 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><pnml>
+<net id="Net-One" type="P/T net">
+<token id="Default" enabled="true" red="0" green="0" blue="0"/>
+<place id="B1">
+<graphics>
+<position x="495.0" y="80.0"/>
+</graphics>
+<name>
+<value>B1</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>4</value>
+</capacity>
+</place>
+<place id="B2">
+<graphics>
+<position x="300.0" y="420.0"/>
+</graphics>
+<name>
+<value>B2</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>5</value>
+</capacity>
+</place>
+<place id="B3">
+<graphics>
+<position x="540.0" y="255.0"/>
+</graphics>
+<name>
+<value>B3</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="M1">
+<graphics>
+<position x="180.0" y="80.0"/>
+</graphics>
+<name>
+<value>M1</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,1</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="M1ComPeça">
+<graphics>
+<position x="255.0" y="150.0"/>
+</graphics>
+<name>
+<value>M1ComPeça</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="M2">
+<graphics>
+<position x="195.0" y="240.0"/>
+</graphics>
+<name>
+<value>M2</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,1</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="M2ComPeça">
+<graphics>
+<position x="120.0" y="315.0"/>
+</graphics>
+<name>
+<value>M2ComPeça</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="M3">
+<graphics>
+<position x="435.0" y="360.0"/>
+</graphics>
+<name>
+<value>M3</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,1</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="M3ComPeça">
+<graphics>
+<position x="585.0" y="420.0"/>
+</graphics>
+<name>
+<value>M3ComPeça</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="Peça">
+<graphics>
+<position x="120.0" y="150.0"/>
+</graphics>
+<name>
+<value>Peça</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,20</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="Peça Final">
+<graphics>
+<position x="660.0" y="360.0"/>
+</graphics>
+<name>
+<value>Peça Final</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="PeçaProcessada">
+<graphics>
+<position x="420.0" y="150.0"/>
+</graphics>
+<name>
+<value>PeçaProcessada</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="Peça Processada">
+<graphics>
+<position x="120.0" y="420.0"/>
+</graphics>
+<name>
+<value>Peça Processada</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<transition id="ColocaNoBuffer2">
+<graphics>
+<position x="195.0" y="420.0"/>
+</graphics>
+<name>
+<value>ColocaNoBuffer2</value>
+<graphics>
+<offset x="-5.0" y="35.0"/>
+</graphics>
+</name>
+<orientation>
+<value>0</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="Colocar Peça">
+<graphics>
+<position x="180.0" y="150.0"/>
+</graphics>
+<name>
+<value>Colocar Peça</value>
+<graphics>
+<offset x="-5.0" y="35.0"/>
+</graphics>
+</name>
+<orientation>
+<value>0</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="Colocar Peça M2">
+<graphics>
+<position x="120.0" y="240.0"/>
+</graphics>
+<name>
+<value>Colocar Peça M2</value>
+<graphics>
+<offset x="-5.0" y="35.0"/>
+</graphics>
+</name>
+<orientation>
+<value>0</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="PegaPeçaFinal">
+<graphics>
+<position x="495.0" y="420.0"/>
+</graphics>
+<name>
+<value>PegaPeçaFinal</value>
+<graphics>
+<offset x="-5.0" y="35.0"/>
+</graphics>
+</name>
+<orientation>
+<value>0</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="ProcessaPeçaM2">
+<graphics>
+<position x="120.0" y="360.0"/>
+</graphics>
+<name>
+<value>ProcessaPeçaM2</value>
+<graphics>
+<offset x="-5.0" y="35.0"/>
+</graphics>
+</name>
+<orientation>
+<value>0</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="ProcessaPeçaM3">
+<graphics>
+<position x="660.0" y="420.0"/>
+</graphics>
+<name>
+<value>ProcessaPeçaM3</value>
+<graphics>
+<offset x="-5.0" y="35.0"/>
+</graphics>
+</name>
+<orientation>
+<value>0</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="Processar Peça">
+<graphics>
+<position x="330.0" y="150.0"/>
+</graphics>
+<name>
+<value>Processar Peça</value>
+<graphics>
+<offset x="-5.0" y="35.0"/>
+</graphics>
+</name>
+<orientation>
+<value>0</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="T2">
+<graphics>
+<position x="420.0" y="80.0"/>
+</graphics>
+<name>
+<value>T2</value>
+<graphics>
+<offset x="-5.0" y="35.0"/>
+</graphics>
+</name>
+<orientation>
+<value>0</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="T8">
+<graphics>
+<position x="540.0" y="360.0"/>
+</graphics>
+<name>
+<value>T8</value>
+<graphics>
+<offset x="-5.0" y="35.0"/>
+</graphics>
+</name>
+<orientation>
+<value>0</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<arc id="B1 to PegaPeçaFinal" source="B1" target="PegaPeçaFinal">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="507" y="106" curvePoint="false"/>
+<arcpath id="001" x="507" y="417" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="B2 to PegaPeçaFinal" source="B2" target="PegaPeçaFinal">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="326" y="432" curvePoint="false"/>
+<arcpath id="001" x="501" y="437" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="ColocaNoBuffer2 to B2" source="ColocaNoBuffer2" target="B2">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="211" y="432" curvePoint="false"/>
+<arcpath id="001" x="297" y="432" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="ColocaNoBuffer2 to M2" source="ColocaNoBuffer2" target="M2">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="207" y="417" curvePoint="false"/>
+<arcpath id="001" x="207" y="266" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="Colocar Peça M2 to M2ComPeça" source="Colocar Peça M2" target="M2ComPeça">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="132" y="267" curvePoint="false"/>
+<arcpath id="001" x="132" y="312" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="Colocar Peça to M1ComPeça" source="Colocar Peça" target="M1ComPeça">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="196" y="162" curvePoint="false"/>
+<arcpath id="001" x="252" y="162" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="M1ComPeça to Processar Peça" source="M1ComPeça" target="Processar Peça">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="281" y="162" curvePoint="false"/>
+<arcpath id="001" x="336" y="162" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="M1 to Colocar Peça" source="M1" target="Colocar Peça">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="192" y="106" curvePoint="false"/>
+<arcpath id="001" x="192" y="147" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="M2ComPeça to ProcessaPeçaM2" source="M2ComPeça" target="ProcessaPeçaM2">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="132" y="341" curvePoint="false"/>
+<arcpath id="001" x="132" y="357" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="M2 to Colocar Peça M2" source="M2" target="Colocar Peça M2">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="192" y="252" curvePoint="false"/>
+<arcpath id="001" x="136" y="252" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="M3ComPeça to ProcessaPeçaM3" source="M3ComPeça" target="ProcessaPeçaM3">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="611" y="432" curvePoint="false"/>
+<arcpath id="001" x="666" y="432" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="M3 to PegaPeçaFinal" source="M3" target="PegaPeçaFinal">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="457" y="382" curvePoint="false"/>
+<arcpath id="001" x="502" y="427" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="Peça Final to T8" source="Peça Final" target="T8">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="657" y="372" curvePoint="false"/>
+<arcpath id="001" x="556" y="372" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="Peça Processada to ColocaNoBuffer2" source="Peça Processada" target="ColocaNoBuffer2">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="146" y="432" curvePoint="false"/>
+<arcpath id="001" x="201" y="432" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="PeçaProcessada to T2" source="PeçaProcessada" target="T2">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="432" y="147" curvePoint="false"/>
+<arcpath id="001" x="432" y="107" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="Peça to Colocar Peça" source="Peça" target="Colocar Peça">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="146" y="162" curvePoint="false"/>
+<arcpath id="001" x="186" y="162" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="Peça to Colocar Peça M2" source="Peça" target="Colocar Peça M2">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="132" y="176" curvePoint="false"/>
+<arcpath id="001" x="132" y="237" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="PegaPeçaFinal to M3ComPeça" source="PegaPeçaFinal" target="M3ComPeça">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="511" y="432" curvePoint="false"/>
+<arcpath id="001" x="582" y="432" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="ProcessaPeçaM2 to Peça Processada" source="ProcessaPeçaM2" target="Peça Processada">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="132" y="387" curvePoint="false"/>
+<arcpath id="001" x="132" y="417" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="ProcessaPeçaM3 to Peça Final" source="ProcessaPeçaM3" target="Peça Final">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="672" y="417" curvePoint="false"/>
+<arcpath id="001" x="672" y="386" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="Processar Peça to PeçaProcessada" source="Processar Peça" target="PeçaProcessada">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="346" y="162" curvePoint="false"/>
+<arcpath id="001" x="417" y="162" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="T2 to B1" source="T2" target="B1">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="436" y="92" curvePoint="false"/>
+<arcpath id="001" x="492" y="92" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="T2 to M1" source="T2" target="M1">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="426" y="92" curvePoint="false"/>
+<arcpath id="001" x="206" y="92" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="T8 to B3" source="T8" target="B3">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="552" y="357" curvePoint="false"/>
+<arcpath id="001" x="552" y="281" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="T8 to M3" source="T8" target="M3">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="546" y="372" curvePoint="false"/>
+<arcpath id="001" x="461" y="372" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+</net>
+</pnml>
