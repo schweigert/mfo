@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><pnml>
+<net id="Net-One" type="P/T net">
+<token id="Default" enabled="true" red="0" green="0" blue="0"/>
+<labels x="279" y="185" width="40" height="14" border="true">
+<text>(m)</text>
+</labels>
+<labels x="375" y="180" width="40" height="14" border="true">
+<text>(m)</text>
+</labels>
+<labels x="207" y="313" width="40" height="14" border="true">
+<text>(m)</text>
+</labels>
+<labels x="435" y="315" width="40" height="14" border="true">
+<text>(m)</text>
+</labels>
+<labels x="242" y="255" width="100" height="14" border="true">
+<text>&lt;if m = MB&gt;</text>
+</labels>
+<labels x="465" y="255" width="100" height="14" border="true">
+<text>&lt;if m = MP&gt;</text>
+</labels>
+<labels x="288" y="132" width="100" height="14" border="true">
+<text>20m</text>
+</labels>
+<labels x="457" y="126" width="100" height="70" border="true">
+<text>CORES
+Meia = MP | MB;
+
+VAR
+m : Meia;</text>
+</labels>
+<place id="Meias brancas">
+<graphics>
+<position x="210.0" y="375.0"/>
+</graphics>
+<name>
+<value>Meias brancas</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="Meias pretas">
+<graphics>
+<position x="435.0" y="375.0"/>
+</graphics>
+<name>
+<value>Meias pretas</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="Quarto">
+<graphics>
+<position x="345.0" y="105.0"/>
+</graphics>
+<name>
+<value>Quarto</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<transition id="Pegar meia branca">
+<graphics>
+<position x="210.0" y="240.0"/>
+</graphics>
+<name>
+<value>Pegar meia branca</value>
+<graphics>
+<offset x="-5.0" y="35.0"/>
+</graphics>
+</name>
+<orientation>
+<value>0</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="Pegar Meia Preta">
+<graphics>
+<position x="435.0" y="240.0"/>
+</graphics>
+<name>
+<value>Pegar Meia Preta</value>
+<graphics>
+<offset x="-5.0" y="35.0"/>
+</graphics>
+</name>
+<orientation>
+<value>0</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<arc id="Pegar meia branca to Meias brancas" source="Pegar meia branca" target="Meias brancas">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="222" y="267" curvePoint="false"/>
+<arcpath id="001" x="222" y="372" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="Pegar Meia Preta to Meias pretas" source="Pegar Meia Preta" target="Meias pretas">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="447" y="267" curvePoint="false"/>
+<arcpath id="001" x="447" y="372" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="Quarto to Pegar meia branca" source="Quarto" target="Pegar meia branca">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="346" y="127" curvePoint="false"/>
+<arcpath id="001" x="226" y="252" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="Quarto to Pegar Meia Preta" source="Quarto" target="Pegar Meia Preta">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="364" y="129" curvePoint="false"/>
+<arcpath id="001" x="441" y="252" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+</net>
+</pnml>

@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><pnml>
+<net id="Net-One" type="P/T net">
+<token id="Default" enabled="true" red="0" green="0" blue="0"/>
+<place id="Homens na Fila">
+<graphics>
+<position x="240.0" y="120.0"/>
+</graphics>
+<name>
+<value>Homens na Fila</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="Homens no Banheiro">
+<graphics>
+<position x="210.0" y="270.0"/>
+</graphics>
+<name>
+<value>Homens no Banheiro</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>5</value>
+</capacity>
+</place>
+<place id="Mulheres na Fila">
+<graphics>
+<position x="375.0" y="120.0"/>
+</graphics>
+<name>
+<value>Mulheres na Fila</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="Mulheres no Banheiro">
+<graphics>
+<position x="405.0" y="270.0"/>
+</graphics>
+<name>
+<value>Mulheres no Banheiro</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>5</value>
+</capacity>
+</place>
+<place id="Pessoas no Estabelecimento">
+<graphics>
+<position x="645.0" y="180.0"/>
+</graphics>
+<name>
+<value>Pessoas no Estabelecimento</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,5</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<transition id="Entrar Homem">
+<graphics>
+<position x="240.0" y="195.0"/>
+</graphics>
+<name>
+<value>Entrar Homem</value>
+<graphics>
+<offset x="-5.0" y="35.0"/>
+</graphics>
+</name>
+<orientation>
+<value>0</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="Entrar Mulher">
+<graphics>
+<position x="375.0" y="195.0"/>
+</graphics>
+<name>
+<value>Entrar Mulher</value>
+<graphics>
+<offset x="-5.0" y="35.0"/>
+</graphics>
+</name>
+<orientation>
+<value>0</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="Homem ir ao Banheiro">
+<graphics>
+<position x="510.0" y="80.0"/>
+</graphics>
+<name>
+<value>Homem ir ao Banheiro</value>
+<graphics>
+<offset x="-5.0" y="35.0"/>
+</graphics>
+</name>
+<orientation>
+<value>0</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="Homem sair do banheiro">
+<graphics>
+<position x="330.0" y="360.0"/>
+</graphics>
+<name>
+<value>Homem sair do banheiro</value>
+<graphics>
+<offset x="-5.0" y="35.0"/>
+</graphics>
+</name>
+<orientation>
+<value>0</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="Mulher ir ao Banheiro">
+<graphics>
+<position x="510.0" y="125.0"/>
+</graphics>
+<name>
+<value>Mulher ir ao Banheiro</value>
+<graphics>
+<offset x="-5.0" y="35.0"/>
+</graphics>
+</name>
+<orientation>
+<value>0</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="Mulher sair do banheiro">
+<graphics>
+<position x="405.0" y="360.0"/>
+</graphics>
+<name>
+<value>Mulher sair do banheiro</value>
+<graphics>
+<offset x="-5.0" y="35.0"/>
+</graphics>
+</name>
+<orientation>
+<value>0</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<arc id="Entrar Homem to Homens no Banheiro" source="Entrar Homem" target="Homens no Banheiro">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="252" y="222" curvePoint="false"/>
+<arcpath id="001" x="228" y="268" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="Entrar Mulher to Mulheres no Banheiro" source="Entrar Mulher" target="Mulheres no Banheiro">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="387" y="222" curvePoint="false"/>
+<arcpath id="001" x="410" y="268" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="Homem ir ao Banheiro to Homens na Fila" source="Homem ir ao Banheiro" target="Homens na Fila">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="516" y="92" curvePoint="false"/>
+<arcpath id="001" x="266" y="129" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="Homem sair do banheiro to Pessoas no Estabelecimento" source="Homem sair do banheiro" target="Pessoas no Estabelecimento">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="346" y="372" curvePoint="false"/>
+<arcpath id="001" x="644" y="199" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="Homens na Fila to Entrar Homem" source="Homens na Fila" target="Entrar Homem">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="252" y="146" curvePoint="false"/>
+<arcpath id="001" x="252" y="192" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="Homens no Banheiro to Entrar Mulher" source="Homens no Banheiro" target="Entrar Mulher">
+<graphics/>
+<inscription>
+<value/>
+<graphics/>
+</inscription>
+<tagged>
+<value/>
+</tagged>
+<arcpath id="000" x="235" y="275" curvePoint="false"/>
+<arcpath id="001" x="381" y="207" curvePoint="false"/>
+<type value="inhibitor"/>
+</arc>
+<arc id="Homens no Banheiro to Homem sair do banheiro" source="Homens no Banheiro" target="Homem sair do banheiro">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="233" y="291" curvePoint="false"/>
+<arcpath id="001" x="336" y="372" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="Mulheres na Fila to Entrar Mulher" source="Mulheres na Fila" target="Entrar Mulher">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="387" y="146" curvePoint="false"/>
+<arcpath id="001" x="387" y="192" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="Mulheres no Banheiro to Entrar Homem" source="Mulheres no Banheiro" target="Entrar Homem">
+<graphics/>
+<inscription>
+<value/>
+<graphics/>
+</inscription>
+<tagged>
+<value/>
+</tagged>
+<arcpath id="000" x="403" y="275" curvePoint="false"/>
+<arcpath id="001" x="256" y="207" curvePoint="false"/>
+<type value="inhibitor"/>
+</arc>
+<arc id="Mulheres no Banheiro to Mulher sair do banheiro" source="Mulheres no Banheiro" target="Mulher sair do banheiro">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="417" y="296" curvePoint="false"/>
+<arcpath id="001" x="417" y="357" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="Mulher ir ao Banheiro to Mulheres na Fila" source="Mulher ir ao Banheiro" target="Mulheres na Fila">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="516" y="137" curvePoint="false"/>
+<arcpath id="001" x="401" y="132" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="Mulher sair do banheiro to Pessoas no Estabelecimento" source="Mulher sair do banheiro" target="Pessoas no Estabelecimento">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="421" y="372" curvePoint="false"/>
+<arcpath id="001" x="645" y="201" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="Pessoas no Estabelecimento to Homem ir ao Banheiro" source="Pessoas no Estabelecimento" target="Homem ir ao Banheiro">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="644" y="183" curvePoint="false"/>
+<arcpath id="001" x="526" y="97" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="Pessoas no Estabelecimento to Mulher ir ao Banheiro" source="Pessoas no Estabelecimento" target="Mulher ir ao Banheiro">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="643" y="186" curvePoint="false"/>
+<arcpath id="001" x="526" y="137" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+</net>
+</pnml>
